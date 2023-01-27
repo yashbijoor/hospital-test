@@ -6,7 +6,6 @@ const mongoose = require("mongoose");
 const Doctor = new mongoose.model("Doctor", doctorSchema);
 
 exports.signUpController = async (req, res, next) => {
-  console.log(req.body);
   const newDoctor = new Doctor({
     name: req.body.name,
     email: req.body.email,

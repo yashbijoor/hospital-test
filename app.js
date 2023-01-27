@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 
 const Routes = require("./utils/allRoutes");
 
-app.use(express.json())
+app.use(express.json());
 app.use(Routes.Doctor_Route);
 app.use(Routes.Patient_Route);
 
